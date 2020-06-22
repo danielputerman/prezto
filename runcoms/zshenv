@@ -9,3 +9,7 @@
 if [[ ( "$SHLVL" -eq 1 && ! -o LOGIN ) && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprofile"
 fi
+
+export GPG_TTY=$(tty)
+export ANDROID_HOME=~/Library/Android/sdk/
+export PATH="$HOME/.cargo/bin:$PATH"
