@@ -15,6 +15,15 @@ if [[ -s "$HOME/.zsecrets" ]]; then
     source "$HOME/.zsecrets"
 fi
 
+# Allow keybindings in menu completion
+zstyle ':completion:*' menu select
+zmodload zsh/complist
+
+# Bring in keybindings
+if [[ -s "${ZDOTDIR:-$HOME}/keys.zsh" ]]; then
+    source "${ZDOTDIR:-$HOME}/keys.zsh"
+fi
+
 # -- JENV
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
