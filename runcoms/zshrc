@@ -29,6 +29,10 @@ export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init --path)"
 
+
 # -- JENV
-export PATH="$HOME/.jenv/bin:$PATH"
-eval "$(jenv init -)"
+ export PATH="$HOME/.jenv/bin:$PATH"
+ eval "$(jenv init -)"
+
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
