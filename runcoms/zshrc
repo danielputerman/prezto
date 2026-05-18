@@ -31,6 +31,11 @@ if [[ -s "${ZDOTDIR:-$HOME}/keys.zsh" ]]; then
     source "${ZDOTDIR:-$HOME}/keys.zsh"
 fi
 
+# Bring in Claude aliases
+if [[ -s "${ZDOTDIR:-$HOME}/claude.zsh" ]]; then
+    source "${ZDOTDIR:-$HOME}/claude.zsh"
+fi
+
 # -- PYENV (static PATH avoids subprocess on every shell start)
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/shims:$PYENV_ROOT/bin:$PATH"
