@@ -202,7 +202,6 @@ if ! zstyle -t ':prezto:module:git:alias' skip; then
   alias gmt='git mergetool'
 
   # Push (p)
-  alias gp='git push'
   alias gpf='git push --force-with-lease'
   alias gpF='git push --force'
   alias gpa='git push --all'
